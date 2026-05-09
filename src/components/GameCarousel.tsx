@@ -55,11 +55,10 @@ export default function GameCarousel({ onSelect }: Props) {
             <div className="w-full aspect-16/8.5 max-md:aspect-16/10 overflow-hidden bg-[#1d1d1d] rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
               {game.image
                 ? <img
-                    key={`${game.title}-${i === idx}`}
                     src={game.image}
                     alt={game.title}
                     loading="lazy"
-                    className={`w-full h-full object-cover block origin-center ${i === idx ? 'animate-ken-burns' : ''}`}
+                    className="w-full h-full object-cover block"
                   />
                 : <div className="w-full h-full bg-[#1d1d1d]" />}
             </div>
