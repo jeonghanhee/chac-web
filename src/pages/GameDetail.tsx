@@ -8,7 +8,7 @@ interface Props {
 }
 
 function md(src: string): string {
-  return marked(src) as string
+  return marked(src, { breaks: true }) as string
 }
 
 export default function GameDetail({ game }: Props) {
