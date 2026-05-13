@@ -3,12 +3,12 @@ import { useReveal } from '../hooks/useReveal'
 
 const HISTORY = [
   {
-    period: '2026. 04',
+    period: '2026. 03',
     title: '팀 창단',
     desc: '인디스타즈 공모전 참가를 목표로 팀을 결성했다. 초기 팀명은 하니원정대였다.',
   },
   {
-    period: '2026. 04 — 05',
+    period: '2026. 03 — 05',
     title: 'The Face They Saw',
     desc: 'AI와 대화하며 숨겨진 진실을 추리하는 첫 번째 게임을 개발했다.',
   },
