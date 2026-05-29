@@ -60,18 +60,6 @@ export default function GameDetail({ game }: Props) {
             ? <img src={game.titleImage} alt={game.title} className="h-[clamp(56px,8vw,120px)] w-auto object-contain mb-10" />
             : <h1 className="font-bebas text-[clamp(64px,10vw,160px)] leading-[0.88] tracking-[0.08em] uppercase text-white mb-11">{game.title}</h1>
           }
-
-          {game.downloadUrl && (
-            <a
-              href={game.downloadUrl}
-              className="inline-flex items-center gap-2.5 font-sans text-14px font-semibold tracking-[0.08em] uppercase text-bg bg-white no-underline px-7 py-3.5 rounded-sm transition-all duration-200 ease-in-out hover:opacity-[0.88] hover:-translate-y-[2px]"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              다운로드
-              <span className="text-[16px]" aria-hidden="true">→</span>
-            </a>
-          )}
         </header>
 
       {desc && (
@@ -88,6 +76,20 @@ export default function GameDetail({ game }: Props) {
             dangerouslySetInnerHTML={{ __html: md(desc.trim()) }}
           />
         </section>
+      )}
+
+      {game.downloadUrl && (
+        <div className="pb-16">
+          <a
+            href={game.downloadUrl}
+            className="inline-flex items-center gap-2.5 font-sans text-14px font-semibold tracking-[0.08em] uppercase text-bg bg-accent no-underline px-7 py-3.5 rounded-sm transition-all duration-200 ease-in-out hover:opacity-[0.88] hover:-translate-y-[2px]"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+          >
+            다운로드
+          </a>
+        </div>
       )}
 
       {log && (
