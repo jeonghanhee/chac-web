@@ -1,0 +1,10 @@
+<game>
+    <title>The Face They Saw</title>
+    <slug>the-face-they-saw</slug>
+    <status>released</status>
+    <image>/images/games/thefacetheysaw_intro.png</image>
+    <downloadTitle>## 다운로드</downloadTitle>
+    <downloads>
+        <download os="Windows" url="/downloads/beta-2.0.zip" label="Beta 2.0" />
+    </downloads>
+</game>
