@@ -100,8 +100,6 @@ export default function GameDetail({ game }: Props) {
                         <a
                           href={download.url}
                           className="inline-flex min-w-[76px] items-center justify-center rounded-sm border border-accent/70 px-3 py-1.5 text-[14px] font-semibold text-accent no-underline transition-all duration-200 hover:bg-accent hover:text-bg"
-                          target="_blank"
-                          rel="noopener noreferrer"
                           download
                         >
                           다운로드
